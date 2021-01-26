@@ -4,7 +4,7 @@ body {
     background-color: rgb(220, 220, 220);
 }
 h1 {
-    color: rgb(0, 0, 200);
+    color: rgb(220, 220, 220);
     font-size: 3em;
     padding: 0em 1em 0em 0em;
     background-color: rgb(75, 93, 224);
@@ -16,7 +16,7 @@ h2 {
 }
 h3 {
     color: rgb(220, 220, 220);
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0em 2em 0em 2em;
     background-color: rgb(75, 93, 224);
 }

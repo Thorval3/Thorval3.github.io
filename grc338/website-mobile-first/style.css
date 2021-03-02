@@ -1,0 +1,42 @@
+/*CSS DOCUMENT*/
+
+img {
+    width: 100%; 
+}
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+body{
+    background-color: rgb(241, 204, 148);
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 3em; 
+    text-align: center;
+}
+nav ul li a{
+	color: rgb(124, 82, 8);
+}
+h1, h2, h3, h4{
+    list-style-type:none;
+    color: rgb(124, 82, 8);
+    background-color: rgb(255, 226, 176);
+}
+p{
+    color: rgb(124, 82, 8);
+}
+li {
+    list-style-type:none; 
+}
+footer{
+    font-weight: 400;
+    text-align:center;
+}

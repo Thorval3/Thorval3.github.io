@@ -1,0 +1,67 @@
+/*CSS DOCUMENT*/
+
+img {
+    width: 100%; 
+}
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
+
+header img{
+    width 50%;
+    height: auto;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+body{
+    background-color: rgb(241, 204, 148);
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 3em; 
+    text-align: center;
+}
+nav ul li a{
+	color: rgb(124, 82, 8);
+}
+h1, h2, h3, h4{
+    list-style-type:none;
+    color: rgb(124, 82, 8);
+    background-color: rgb(255, 226, 176);
+}
+p{
+    color: rgb(124, 82, 8);
+}
+li {
+    list-style-type:none; 
+}
+footer{
+    font-weight: 400;
+    text-align:center;
+}
+@media screen and (min-width: 60em){
+    div.menu{
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 15% auto;
+    }
+        div.standard{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+        div.special{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: rgb(234, 196, 136);
+    }
+        div.shakes{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-color: rgb(224, 190, 134);
+    }
+}

@@ -1,15 +1,15 @@
 @import url("https://use.typekit.net/zag6krx.css");
 
-/*CSS document*/
+/* CSS document */
 
 body {
   background-color: #3e3e43;
   padding: 1em;
-  color: white;
+  color: rgb(220, 220, 220);
 }
 
 div.container {
-  max-width: 40em;
+  max-width: 50em;
   margin: auto;
 }
 
@@ -33,6 +33,8 @@ nav ul {
 }
 
 nav ul li {
+  display: inline-block;
+  padding-right: 0.5em;
   color: rgb(220, 220, 220);
   font-size: 1em;
   line-height: 1.3em;
@@ -62,7 +64,7 @@ section p {
   padding: 0em 1em 0em;
 }
 
-div.noimages h3 {
+div.tertiary h3 {
   padding-top: 1.8em;
 }
 
@@ -73,11 +75,7 @@ figure {
 }
 
 article figcaption {
-  padding: 1em 0.5em 0em;
-}
-
-article {
-  margin-top: 3em;
+  padding: 1em 1em 0em;
 }
 
 h1 {
@@ -86,7 +84,6 @@ h1 {
   line-height: 1.2em;
   font-family: "apparat", sans-serif;
   font-weight: 600;
-  font-style: normal;
 }
 
 h2 {
@@ -95,7 +92,6 @@ h2 {
   line-height: 1.3em;
   font-family: "apparat", sans-serif;
   font-weight: 600;
-  font-style: normal;
 }
 
 h3 {
@@ -104,7 +100,6 @@ h3 {
   line-height: 1.2em;
   font-family: "apparat", sans-serif;
   font-weight: 600;
-  font-style: normal;
 }
 
 figcaption {
@@ -113,7 +108,6 @@ figcaption {
   line-height: 1.2em;
   font-family: "apparat light", sans-serif;
   font-weight: 200;
-  font-style: normal;
 }
 
 p {
@@ -122,16 +116,67 @@ p {
   line-height: 1.2em;
   font-family: "apparat light", sans-serif;
   font-weight: 200;
-  font-style: normal;
   padding: 0.2em 0em 0.2em 0em;
 }
 
 footer {
   color: rgb(220, 220, 220);
   font-size: 0.7em;
-  line-height: 1em;
   font-family: "apparat light", sans-serif;
   font-weight: 200;
-  font-style: normal;
   padding-top: 0.5em;
+}
+
+@media only screen and (min-width: 40em) {
+  div.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0 1em;
+  }
+
+  header {
+    grid-column: 1/3;
+  }
+
+  div.logo {
+    width: 60%;
+  }
+
+  nav li {
+    display: inline-block;
+    padding-right: 1.7em;
+  }
+
+  main {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 1em;
+  }
+
+  article {
+    grid-column: 1/3;
+  }
+
+  aside {
+    grid-column: 3/4;
+  }
+
+  div.primary {
+    grid-column: 1/4;
+  }
+
+  div.secondary {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  div.tertiary {
+    grid-column: 3/4;
+  }
+
+  footer {
+    grid-column: 1/3;
+  }
 }
